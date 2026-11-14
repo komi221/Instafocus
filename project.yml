@@ -1,0 +1,26 @@
+name: InstaDM
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "15.0"
+targets:
+  InstaDM:
+    type: application
+    platform: iOS
+    sources: [InstaDM]
+    info:
+      path: InstaDM/Info.plist
+      properties:
+        CFBundleDisplayName: DM
+        UILaunchScreen: {}
+        UIUserInterfaceStyle: Dark
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        UISupportedInterfaceOrientations~ipad: [UIInterfaceOrientationPortrait, UIInterfaceOrientationPortraitUpsideDown, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        NSCameraUsageDescription: 사진 전송에 카메라를 사용합니다.
+        NSPhotoLibraryUsageDescription: 사진 전송에 사진 보관함을 사용합니다.
+        NSMicrophoneUsageDescription: 음성 메시지에 마이크를 사용합니다.
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.instadm
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: "5.0"
